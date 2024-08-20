@@ -875,16 +875,20 @@ footer p {
     .main-definition {
         flex-direction: column;
         gap: 100px;
-        height: 130vh;
+        height: 120vh;
+    }
+
+    .definition {
+        width: 70vw;
     }
 
     .translation {
         margin-top: 80px;
-        height: 130vh;
+        height: 120vh;
     }
 
     .translation-text {
-        width: 400px;
+        width: 70vw;
     }
 
     .line {
@@ -906,8 +910,12 @@ footer p {
     .rotation {
         flex-direction: column;
         margin-top: 20px;
-        height: 130vh;
-        gap: 50px;
+        height: 120vh;
+        gap: 10px;
+    }
+
+    .rotation-p {
+        width: 70vw;
     }
 
     .rotation-text h2 {
@@ -925,20 +933,24 @@ footer p {
     .dilation {
         flex-direction: column-reverse;
         margin-top: 30px;
-        height: 130vh;
+        height: 120vh;
     }
 
     .dilation-text h2 {
         display: none;
     }
 
+    .dilation-text-p {
+        width: 70vw;
+    }
+
     .reflection {
         margin-top: 20px;
-        height: 130vh;
+        height: 120vh;
     }
 
     .reflection-p {
-        width: 400px;
+        width: 70vw;
     }
 
     .reflection-icon {
@@ -1016,10 +1028,6 @@ footer p {
         height: 20px;
     }
 
-    .definition {
-        width: 200px;
-        height: fit-content;
-    }
 
     .definition-icon {
         width: 80px;
@@ -1050,18 +1058,6 @@ footer p {
         }
     }
 
-    .translation-text {
-        width: 200px;
-    }
-
-    .rotation-p {
-        width: 200px;
-    }
-
-    .dilation-text-p {
-        width: 200px;
-    }
-
     .reflection-icon {
         gap: 10px;
     }
@@ -1075,10 +1071,6 @@ footer p {
 
     .reflection-line {
         height: 200px;
-    }
-
-    .reflection-p {
-        width: 200px;
     }
 
     .rotation-img {
