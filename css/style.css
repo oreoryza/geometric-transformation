@@ -831,15 +831,17 @@ footer p {
 
 
 .graffiti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     white-space: nowrap;
     overflow: clip;
     color: aliceblue;
     text-align: center;
     font-style: italic;
     font-weight: bold;
-    font-size: 14vw;
-    margin-bottom: -5.8vw;
-    margin-left: -3.2vw;
+    font-size: 13vw;
+    margin-bottom: -6vw;
     background: linear-gradient(to right, #f0a432, #32CD32);
     background-clip: text;
     -webkit-text-fill-color: transparent;
