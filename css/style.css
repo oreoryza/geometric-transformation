@@ -875,7 +875,7 @@ footer p {
     .main-definition {
         flex-direction: column;
         gap: 100px;
-        height: 120vh;
+        height: 100vh;
     }
 
     .definition {
@@ -884,7 +884,7 @@ footer p {
 
     .translation {
         margin-top: 80px;
-        height: 120vh;
+        height: 100vh;
     }
 
     .translation-text {
@@ -910,7 +910,7 @@ footer p {
     .rotation {
         flex-direction: column;
         margin-top: 20px;
-        height: 120vh;
+        height: 100vh;
         gap: 10px;
     }
 
@@ -933,7 +933,7 @@ footer p {
     .dilation {
         flex-direction: column-reverse;
         margin-top: 30px;
-        height: 120vh;
+        height: 100vh;
     }
 
     .dilation-text h2 {
@@ -946,7 +946,7 @@ footer p {
 
     .reflection {
         margin-top: 20px;
-        height: 120vh;
+        height: 100vh;
     }
 
     .reflection-p {
