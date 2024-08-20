@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Personal Portofolio | MySkill</title>
+        <link rel="icon" type="image/png" href="asset/logo.png">
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    </head>
+
+    <body>
+        <div class="btn-back" id="btn-back">
+            <a class="back" href="index.html#dilation">&#8612; Go back</a>
+            <h3>Dilation</h3>
+        </div>
+
+        <div class="resize-drag" id="resize"></div>
+
+        <div class="dilation-size" id="dilation-size">
+            <a href="dilation.html" class="dilation-btn">&#10226;</a>
+            <a class="dilation-btn" id="view-btn">&#9673;</a>
+            <div id="size"></div>
+            <a class="dilation-btn" id="guide-btn">?</a>
+        </div>
+
+        <div class="guide-cont" id="guide-cont">
+            <div class="guide">
+                <p><b>How to?</b><br>
+                    <br>
+                    The '&#10226;' button is for resetting the box position and the '&#9673;' button is for displaying the box size.<br>
+                    <br>
+                    The challenge is that you have to adjust the box size using your cursor until it looks like a perfect box (ex: 100X100). Then you can press the '&#9673;' button to check the result.<br>
+                    <br>
+                    Good luck!</p>
+                <div class="btn-got-it">
+                    <a id="got-it">Got it!</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
