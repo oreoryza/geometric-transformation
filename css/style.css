@@ -1477,3 +1477,26 @@ main {
     }
 
 }
+
+.btn-sync {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-sync a {
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px 10px 15px;
+    background-color: transparent;
+    color: #f0a432;
+    border-radius: 8px;
+    border: 3px solid #f0a432;
+    transition-duration: 0.3s;
+}
+
+.btn-sync a:hover {
+    color: aliceblue;
+    background-color: #f0a432;
+}
