@@ -1,3 +1,4 @@
+/* BASIC **********************************************************************/
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -28,6 +29,31 @@ body {
     
 }
 
+/* BUTTON */
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-container a {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    color: #32CD32;
+    border-radius: 10px;
+    border: 3px solid #32CD32;
+    transition-duration: 0.3s;
+}
+
+.btn-container a:hover {
+    color: aliceblue;
+    background-color: #32CD32;
+}
+
+/* NAVIGATION BAR ******************************************************************************/
 nav {
     position: fixed;
     display: flex;
@@ -213,32 +239,7 @@ nav hr {
 }
 
 
-/* BUTTON */
-.btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.btn-container a {
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px 20px 10px 20px;
-    background-color: transparent;
-    color: #32CD32;
-    border-radius: 10px;
-    border: 3px solid #32CD32;
-    transition-duration: 0.3s;
-}
-
-.btn-container a:hover {
-    color: aliceblue;
-    background-color: #32CD32;
-}
-
-
-/* HEADER */
+/* HEADER *************************************************************************/
 header {
     display: flex;
     flex-direction: column;
@@ -330,7 +331,7 @@ header {
 }
 
 
-/* DEFINITION */
+/* DEFINITION ***********************************************************************************/
 .main-definition {
     display: flex;
     justify-content: space-evenly;
@@ -384,7 +385,7 @@ header {
 }
 
 
-/* TRANSLATION */
+/* TRANSLATION ********************************************************************************************/
 .translation {
     display: flex;
     flex-direction: column;
@@ -501,7 +502,7 @@ header {
 }
 
 
-/* ROTATION */
+/* ROTATION **************************************************************************************************/
 .rotation {
     display: flex;
     justify-content: space-evenly;
@@ -601,7 +602,7 @@ header {
 }
 
 
-/* DILATION */
+/* DILATION ***************************************************************************************************/
 .dilation {
     display: flex;
     justify-content: space-evenly;
@@ -663,7 +664,7 @@ header {
     }
 }
 
-/* REFLECTION */
+/* REFLECTION ****************************************************************************************************/
 .reflection {
     display: flex;
     flex-direction: column;
@@ -753,7 +754,7 @@ header {
 }
 
 
-/* FOOTER */
+/* FOOTER ******************************************************************************************************/
 footer {
     background-color: rgb(35, 36, 39);
     filter: drop-shadow(0 0 0rem aliceblue);
@@ -829,7 +830,7 @@ footer p {
     height: 40px;
 }
 
-
+/* NAME DROP **************************************************************************************************/
 .graffiti {
     display: flex;
     justify-content: center;
@@ -848,8 +849,9 @@ footer p {
 }
 
 
-/* RESPONSIVE */
+/* RESPONSIVE 1024 *********************************************************************************************/
 @media only screen and (max-width: 1024px) {
+    /* TRANSALATION */
     .line {
         width: 500px;
     }
@@ -866,12 +868,38 @@ footer p {
         }
     }
 
+    /* ROTATION */
     .rotation-img {
         scale: 1.2;
     }
 }
 
+/* RESPONSIVE 768 *********************************************************************************************/
 @media only screen and (max-width: 768px) {
+    /* TITLE RESPONSIVE */
+    .title-resp {
+        display: contents;
+    }
+
+     /* HEADER */
+     .comp-1 {
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: calc(2 * 30px * 0.866) solid #32CD32;
+        border-top: 30px solid transparent;
+    }
+
+    .comp-2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .comp-3 {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* DEFINITION */
     .main-definition {
         flex-direction: column;
         gap: 100px;
@@ -882,6 +910,7 @@ footer p {
         width: 70vw;
     }
 
+    /* TRANSLATION */
     .translation {
         margin-top: 80px;
         height: 100vh;
@@ -907,6 +936,7 @@ footer p {
         }
     }
 
+    /* ROTATION */
     .rotation {
         flex-direction: column;
         margin-top: 20px;
@@ -922,14 +952,11 @@ footer p {
         display: none;
     }
 
-    .title-resp {
-        display: contents;
-    }
-
     .rotation-img {
         scale: 1.7;
     }
 
+    /* DILATION */
     .dilation {
         flex-direction: column-reverse;
         margin-top: 30px;
@@ -944,6 +971,7 @@ footer p {
         width: 70vw;
     }
 
+    /* REFLECTION */
     .reflection {
         margin-top: 20px;
         height: 100vh;
@@ -957,33 +985,19 @@ footer p {
         gap: 40px;
     }
 
-    .comp-1 {
-        border-left: 30px solid transparent;
-        border-right: 30px solid transparent;
-        border-bottom: calc(2 * 30px * 0.866) solid #32CD32;
-        border-top: 30px solid transparent;
-    }
-
-    .comp-2 {
-        width: 70px;
-        height: 70px;
-    }
-
-    .comp-3 {
-        width: 30px;
-        height: 30px;
-    }
-
+    /* REFLECTION TRY */
     .vid {
         display: none;
     }
 }
 
+/* RESPONSIVE 600 *******************************************************************************************/
 @media only screen and (max-width: 600px) {
     h2 {
         font-size: 5vw;
     }
 
+    /* NAVIGATION BAR */
     nav {
         flex-direction: row;
         height: fit-content;
@@ -1011,6 +1025,7 @@ footer p {
         flex-direction: row;
     }
 
+    /* HEADER */
     .comp-1 {
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
@@ -1028,14 +1043,14 @@ footer p {
         height: 20px;
     }
 
-
+    /* DEFINITION */
     .definition-icon {
         width: 80px;
         height: 80px;
         border-width: 6px;
     }
 
-
+    /* TRANSLATION */
     .translation-img {
         width: 50px;
         height: 50px;
@@ -1058,6 +1073,7 @@ footer p {
         }
     }
 
+    /* REFLECTION */
     .reflection-icon {
         gap: 10px;
     }
@@ -1073,11 +1089,12 @@ footer p {
         height: 200px;
     }
 
+    /* ROTATION */
     .rotation-img {
         scale: 1;
     }
 
-
+    /* FOOTER */
     .foot {
         flex-direction: column-reverse;
     }
@@ -1088,6 +1105,7 @@ footer p {
     }
 }
 
+/* RESPONSIVE 475 *********************************************************************************************/
 @media only screen and (max-width: 475px) {
     footer {
         padding: 50px 40px 100px 40px;
@@ -1104,11 +1122,87 @@ footer p {
     }
 }
 
+/* TRANSFORMATION PAGES ***************************************************************************************/
+/* HEADER */
+.btn-back {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.btn-back h3 {
+    color: #32CD32;
+}
+
+.back {
+    margin: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 12px 10px 12px;
+    background-color: rgb(35, 36, 39);
+    color: #32CD32;
+    border: 1px solid rgba(240, 248, 255, 0.2);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* GUIDE POP UP */
+.guide-cont {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgba(55, 56, 60, 0.2);
+    backdrop-filter: blur(4px);
+    visibility: hidden;
+}
+
+.guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-decoration: none;
+    max-width: 250px;
+    height: fit-content;
+    color: rgb(35, 36, 39);
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    border: 4px solid #32CD32;
+    box-shadow: rgba(50, 205, 50, 1) 10px 10px;
+}
+
+.btn-got-it {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
 
 
-/* ROTATE PAGE */
+.btn-got-it a {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px 10px 15px;
+    background-color: transparent;
+    color: #32CD32;
+    border-radius: 8px;
+    border: 3px solid #32CD32;
+}
+
+.btn-got-it a:hover {
+    background-color: #32CD32;
+    color: aliceblue;
+}
 
 
+/* ROTATE PAGE *********************************************************************************************/
 .rotate-obj-cont {
     display: flex;
     flex-direction: column;
@@ -1162,30 +1256,8 @@ footer p {
     background-color: #f0a432;
 }
 
-.btn-back {
-    display: flex;
-    align-items: center;
-    z-index: 1;
-}
 
-.btn-back h3 {
-    color: #32CD32;
-}
-
-.back {
-    margin: 40px;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px 12px 10px 12px;
-    background-color: rgb(35, 36, 39);
-    color: #32CD32;
-    border: 1px solid rgba(240, 248, 255, 0.2);
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-
-/* TRANSLATE PAGES */
+/* TRANSLATE PAGE **********************************************************************************************/
 
 .container {
     display: flex;
@@ -1206,25 +1278,6 @@ footer p {
     filter: drop-shadow(0 0 0.5rem #f0a432);
     border-radius: 50%;
     z-index: 2;
-    animation: none;
-}
-
-@keyframes rgb {
-    0% {
-        border-color: red;
-    }
-    25% {
-        border-color: yellow;
-    }
-    50% {
-        border-color: green;
-    }
-    75% {
-        border-color: blue;
-    }
-    100% {
-        border-color: red;
-    }
 }
 
 .btn-reset {
@@ -1253,8 +1306,47 @@ footer p {
     background-color: #f0a432;
 }
 
+main {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* DILATION PAGES */
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #32CD32;
+    border-radius: 50%;
+}
+
+.catch-1 {
+    white-space: nowrap;
+    overflow: clip;
+    color: #32CD32;
+    visibility: visible;
+    animation: appear 5s infinite;
+}
+
+.catch-2 {
+    color: red;
+    visibility: hidden;
+}
+
+@keyframes appear {
+    0% {
+        visibility: hidden;
+    }
+    80% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+
+/* DILATION PAGE *********************************************************************************************/
 
 .dilation-obj-cont {
     display: flex;
@@ -1318,61 +1410,8 @@ footer p {
     background-color: #f0a432;
 }
 
-.guide-cont {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    z-index: 5;
-    background-color: rgba(55, 56, 60, 0.2);
-    backdrop-filter: blur(4px);
-    visibility: hidden;
-}
 
-.guide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    text-decoration: none;
-    max-width: 250px;
-    height: fit-content;
-    color: rgb(35, 36, 39);
-    background-color: aliceblue;
-    border-radius: 10px;
-    padding: 20px;
-    border: 4px solid #32CD32;
-    box-shadow: rgba(50, 205, 50, 1) 10px 10px;
-}
-
-.btn-got-it {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-}
-
-
-.btn-got-it a {
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px 15px 10px 15px;
-    background-color: transparent;
-    color: #32CD32;
-    border-radius: 8px;
-    border: 3px solid #32CD32;
-}
-
-.btn-got-it a:hover {
-    background-color: #32CD32;
-    color: aliceblue;
-}
-
-
+/* REFLECTION PAGE ********************************************************************************************/
 .vid {
     display: flex;
     justify-content: center;
@@ -1437,43 +1476,4 @@ footer p {
         transform: scaleX(-1) translateY(-5px);
     }
 
-}
-
-main {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.circle {
-    width: 30px;
-    height: 30px;
-    background-color: #32CD32;
-    border-radius: 50%;
-}
-
-.catch-1 {
-    white-space: nowrap;
-    overflow: clip;
-    color: #32CD32;
-    visibility: visible;
-    animation: appear 5s infinite;
-}
-
-.catch-2 {
-    color: red;
-    visibility: hidden;
-}
-
-@keyframes appear {
-    0% {
-        visibility: hidden;
-    }
-    80% {
-        visibility: hidden;
-    }
-    100% {
-        visibility: visible;
-    }
 }

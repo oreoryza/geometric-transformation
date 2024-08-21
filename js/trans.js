@@ -1,4 +1,4 @@
-// TRANSLATE
+// TRANSLATE /////////////////////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', function () {
     // The current position of mouse
     let x = 0;
