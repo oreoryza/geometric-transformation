@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // RANDOM MOVE GREEN CICRLE
-var circ = document.querySelectorAll('main');
+var circ = document.querySelectorAll('.catch');
 var newq;
 let h,w,nh,nw,s; 
 

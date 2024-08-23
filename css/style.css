@@ -1125,7 +1125,7 @@ footer p {
     background-color: #f0a432;
 }
 
-main {
+.catch {
     position: fixed;
     display: flex;
     flex-direction: column;
