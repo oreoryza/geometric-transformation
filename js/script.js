@@ -16,3 +16,15 @@ function revealFunction(){
 window.addEventListener('load', () => {
     revealFunction();
 })
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>4000)
+     {
+        $('nav').fadeOut();
+     }
+    else
+     {
+      $('nav').fadeIn();
+     }
+ });
