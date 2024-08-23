@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
 
 $(window).scroll(function() {
 
-    if ($(this).scrollTop()>4000)
+    if ($(this).scrollTop()>4300)
      {
         $('nav').fadeOut();
      }
