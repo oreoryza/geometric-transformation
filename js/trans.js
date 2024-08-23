@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ele.addEventListener('mousedown', mouseDownHandler);
 });
 
+// RANDOM MOVE GREEN CICRLE
 var circ = document.querySelectorAll('main');
 var newq;
 let h,w,nh,nw,s; 
@@ -65,7 +66,7 @@ circ.forEach(function circ(myclass) {
   });
 });
 
-
+// OVERLAPPING FOR CATCH GREEN BALL
 $(document).ready(function() {
     var $draggable = $('#drag');
     var $circle = $('#circle');
@@ -77,6 +78,7 @@ $(document).ready(function() {
       var draggableRect = $draggable[0].getBoundingClientRect();
       var circleRect = $circle[0].getBoundingClientRect();
   
+      // ifelse condition when orange circle over green circle
       if (isOverlapping(draggableRect, circleRect)) {
         $circle.css('background-color', 'red');
         if (!overlapTimer) {
@@ -100,6 +102,7 @@ $(document).ready(function() {
     });
   });
   
+  // detect if its overlapping
   function isOverlapping(rect1, rect2) {
     return !(rect1.right < rect2.left ||
                rect1.left > rect2.right ||
@@ -108,6 +111,7 @@ $(document).ready(function() {
   }
 
 
+// GUIDE VIEW ///////////////////////////////////////////////////////////////////
 const guideButton = document.getElementById("guide-btn");
 const guide = document.getElementById("guide-cont");
 const gotIt = document.getElementById("got-it")

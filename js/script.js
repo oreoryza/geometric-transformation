@@ -17,6 +17,8 @@ window.addEventListener('load', () => {
     revealFunction();
 })
 
+
+// NAVIGATION FADE /////////////////////////////////////////////////////////////////////////////////
 $(window).scroll(function() {
 
     if ($(this).scrollTop()>4300)

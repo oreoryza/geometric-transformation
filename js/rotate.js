@@ -6,13 +6,14 @@ let boxCenter= {
   y: boxBoundingRect.top + boxBoundingRect.height/2
 };
 
+// triggered when user mouse move
 document.addEventListener("mousemove", e => {
 	let angle = Math.atan2(e.pageX - boxCenter.x, - (e.pageY - boxCenter.y) )*(180 / Math.PI);	    
 	box.style.transform = `rotate(${angle}deg)`;
     document.getElementById('deg').innerHTML = angle;
 });
 
-
+// GUIDE VIEW ///////////////////////////////////////////////////////////////////
 const guideButton = document.getElementById("guide-btn");
 const guide = document.getElementById("guide-cont");
 const gotIt = document.getElementById("got-it")

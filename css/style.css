@@ -816,11 +816,6 @@ footer p {
         width: 30px;
         height: 30px;
     }
-
-    /* REFLECTION TRY */
-    .vid {
-        display: none;
-    }
 }
 
 /* RESPONSIVE 600 *******************************************************************************************/
@@ -960,9 +955,14 @@ footer p {
     padding: 10px 12px 10px 12px;
     background-color: rgb(35, 36, 39);
     color: #32CD32;
-    border: 1px solid rgba(240, 248, 255, 0.2);
+    border: 2px solid rgba(240, 248, 255, 0.2);
     border-radius: 10px;
     text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.back:hover {
+    border-color: #32CD32;
 }
 
 /* GUIDE POP UP */
@@ -1252,16 +1252,7 @@ main {
 
 .vid-line {
     width: 5px;
-    height: 60vh;
-    background-color: aliceblue;
-    filter: drop-shadow(0 0 0.5rem aliceblue);
-    border-radius: 5px;
-}
-
-.vid-line-down {
-    display: none;
-    width: 50vw;
-    height: 5px;
+    height: 300px;
     background-color: aliceblue;
     filter: drop-shadow(0 0 0.5rem aliceblue);
     border-radius: 5px;
